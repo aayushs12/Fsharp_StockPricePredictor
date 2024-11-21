@@ -1,0 +1,197 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Prediction </title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        h1 {
+            background-color: #E50914; /* Netflix red */
+            color: black;
+            text-align: center;
+            padding: 15px;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #E50914;
+            margin-top: 0;
+        }
+
+        .card {
+            background: #f3f3f3;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        button {
+            background-color: #E50914;
+            color: black;
+            border: none;
+            padding: 10px 15px;
+            font-size: 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+            button:hover {
+                background-color: #bf0812;
+            }
+
+        a {
+            color: #E50914;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+            a:hover {
+                text-decoration: underline;
+            }
+        .block-metric {
+            display: block; /* Ensures the value is displayed in its own block */
+            font-size: 23px; /* Correctly set the font size */
+            font-weight: bold; /* Makes the value stand out */
+            color: black; /* Ensures text is visible on a dark background */
+            margin: 10px 0; /* Adds spacing around the block */
+        }
+
+        .metric {
+            display: inline-block;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin: 5px;
+            border-radius: 5px;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: calc(50% - 20px);
+        }
+
+            .metric h3 {
+                color: #E50914;
+                margin-bottom: 5px;
+            }
+
+            .metric p {
+                font-size: 25px;
+                margin: 0;
+            }
+    </style>
+    <script defer src="script.js"></script> <!-- Link to JavaScript -->
+</head>
+
+<body>
+    <h1>Stock Prediction </h1>
+
+    <div class="container">
+        <div class="card">
+            <h2>Access Your File</h2>
+            <a href="/file" target="_blank">Open Graph File</a>
+        </div>
+
+        <div class="card">
+            <h2>Metrics</h2>
+            <button onclick="loadMetrics()">Load Metrics</button>
+            <div id="metrics" class="metrics">
+                <div class="metric">
+                    <h2>MSE</h2>
+                    <p id="mse" class="block-metric">--</p>
+                </div>
+                <div class="metric">
+                    <h2>R²</h2>
+                    <p id="r2" class="block-metric">--</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Next Predicted Price</h2>
+            <button onclick="loadNextPrice()">Load Next Price</button>
+            <p id="next-price-value" class="block-metric" font-size="25px">--</p>
+        </div>
+    </div>
+    <script>
+        async function loadMetrics() {
+            const response = await fetch('/metrics');
+            const data = await response.json();
+            document.getElementById('mse').innerText = `MSE: ${data.mse}`;
+            document.getElementById('r2').innerText = `R²: ${data.r2}`;
+        }
+
+        async function loadPredictions() {
+            const response = await fetch('/predictions');
+            const data = await response.json();
+            const table = document.getElementById('predictions-table');
+            table.innerHTML = '';
+            data.forEach(pred => {
+                const row = document.createElement('tr');
+                row.innerHTML = `<td>${pred.actual}</td><td>${pred.predicted}</td>`;
+                table.appendChild(row);
+            });
+        }
+
+        async function loadNextPrice() {
+            const response = await fetch('/next-price');
+            const data = await response.json();
+            document.getElementById('next-price-value').innerText = `Next Price: ${data.nextPrice} on ${data.nextDate}`;
+        }
+
+        async function uploadCSV() {
+            const fileInput = document.getElementById('file-input'); // Reference to the file input
+            const statusElement = document.getElementById('upload-status'); // Reference to the status display
+
+            // Clear any previous status
+            statusElement.innerText = '';
+
+            // Ensure a file is selected
+            if (fileInput.files.length === 0) {
+                statusElement.innerText = 'Please select a file to upload.';
+                return;
+            }
+
+            const file = fileInput.files[0]; // Get the selected file
+            const formData = new FormData(); // Create a FormData object
+            formData.append('file', file); // Append the file
+
+            try {
+                // Send the POST request to upload the file
+                const response = await fetch('/upload', {
+                    method: 'POST',
+                    body: formData
+                });
+
+                // Handle the response
+                if (response.ok) {
+                    const result = await response.text();
+                    statusElement.innerText = `Upload successful: ${result}`;
+                } else {
+                    const error = await response.text();
+                    statusElement.innerText = `Upload failed: ${error}`;
+                }
+            } catch (error) {
+                statusElement.innerText = `Error uploading file: ${error.message}`;
+            }
+        }
+    </script>
+</body>
+</html>

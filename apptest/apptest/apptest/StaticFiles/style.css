@@ -1,0 +1,119 @@
+﻿/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: black; /* Netflix black */
+    color: white; /* Adjust text color for readability */
+}
+
+/* Header styling */
+h1 {
+    background-color: #E50914; /* Netflix red */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin: 0;
+}
+
+h2 {
+    color: #E50914; /* Netflix red */
+    margin-top: 0;
+}
+
+/* Button styling */
+button {
+    background-color: #E50914; /* Netflix red */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+    button:hover {
+        background-color: #bf0812;
+    }
+
+/* Card styling */
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #1C1C1C; /* Dark gray for contrast */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Adjusted for black background */
+}
+
+.card {
+    background: #1C1C1C; /* Dark gray for contrast */
+    color: white; /* Ensure text is readable */
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Metrics layout */
+.metric {
+    display: inline-block;
+    background-color: #333; /* Darker gray for better contrast */
+    border: 1px solid #444;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: calc(50% - 20px); /* Two metrics in a row */
+}
+
+    .metric h3 {
+        color: #E50914; /* Netflix red */
+        margin-bottom: 5px;
+    }
+
+    .metric p {
+        font-size: 16px;
+        margin: 0;
+        color: white; /* Ensure text is readable */
+    }
+
+/* Table styling */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px 0;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+table, th, td {
+    border: 1px solid #444; /* Lighter gray for visibility */
+}
+
+th {
+    background-color: #E50914; /* Netflix red */
+    color: white;
+}
+
+td {
+    background-color: #1C1C1C; /* Dark gray to blend with the design */
+    color: white; /* Ensure text is readable */
+}
+
+/* Section spacing */
+#metrics, #predictions, #next-price {
+    margin-bottom: 20px;
+}
+
+/* Link styling */
+a {
+    color: #E50914; /* Netflix red */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+    a:hover {
+        text-decoration: underline;
+    }

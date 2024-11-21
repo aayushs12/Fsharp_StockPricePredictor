@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <RestoreSuccess Condition=" '$(RestoreSuccess)' == '' ">True</RestoreSuccess>
+    <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
+    <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
+    <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\Manali\.nuget\packages\;C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages</NuGetPackageFolders>
+    <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
+    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">6.12.1</NuGetToolVersion>
+  </PropertyGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <SourceRoot Include="C:\Users\Manali\.nuget\packages\" />
+    <SourceRoot Include="C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages\" />
+  </ItemGroup>
+  <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)microsoft.ml\1.0.0\build\netstandard2.0\Microsoft.ML.props" Condition="Exists('$(NuGetPackageRoot)microsoft.ml\1.0.0\build\netstandard2.0\Microsoft.ML.props')" />
+  </ImportGroup>
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgFSharp_Core Condition=" '$(PkgFSharp_Core)' == '' ">C:\Users\Manali\.nuget\packages\fsharp.core\9.0.100</PkgFSharp_Core>
+    <PkgXPlot_GoogleCharts Condition=" '$(PkgXPlot_GoogleCharts)' == '' ">C:\Users\Manali\.nuget\packages\xplot.googlecharts\2.0.0</PkgXPlot_GoogleCharts>
+    <PkgSuave Condition=" '$(PkgSuave)' == '' ">C:\Users\Manali\.nuget\packages\suave\2.6.2</PkgSuave>
+    <PkgPlotly_NET Condition=" '$(PkgPlotly_NET)' == '' ">C:\Users\Manali\.nuget\packages\plotly.net\5.1.0</PkgPlotly_NET>
+    <PkgMicrosoft_ML Condition=" '$(PkgMicrosoft_ML)' == '' ">C:\Users\Manali\.nuget\packages\microsoft.ml\1.0.0</PkgMicrosoft_ML>
+    <PkgMicrosoft_ML_TimeSeries Condition=" '$(PkgMicrosoft_ML_TimeSeries)' == '' ">C:\Users\Manali\.nuget\packages\microsoft.ml.timeseries\0.12.0</PkgMicrosoft_ML_TimeSeries>
+    <PkgMathNet_Numerics Condition=" '$(PkgMathNet_Numerics)' == '' ">C:\Users\Manali\.nuget\packages\mathnet.numerics\5.0.0</PkgMathNet_Numerics>
+    <PkgFSharp_Data Condition=" '$(PkgFSharp_Data)' == '' ">C:\Users\Manali\.nuget\packages\fsharp.data\6.4.0</PkgFSharp_Data>
+    <PkgFSharp_Charting Condition=" '$(PkgFSharp_Charting)' == '' ">C:\Users\Manali\.nuget\packages\fsharp.charting\2.1.0</PkgFSharp_Charting>
+    <PkgDeedle Condition=" '$(PkgDeedle)' == '' ">C:\Users\Manali\.nuget\packages\deedle\3.0.0</PkgDeedle>
+    <PkgDeedle_Math Condition=" '$(PkgDeedle_Math)' == '' ">C:\Users\Manali\.nuget\packages\deedle.math\3.0.0</PkgDeedle_Math>
+    <PkgAccord Condition=" '$(PkgAccord)' == '' ">C:\Users\Manali\.nuget\packages\accord\3.8.0</PkgAccord>
+    <PkgAccord_Math Condition=" '$(PkgAccord_Math)' == '' ">C:\Users\Manali\.nuget\packages\accord.math\3.8.0</PkgAccord_Math>
+    <PkgAccord_Statistics Condition=" '$(PkgAccord_Statistics)' == '' ">C:\Users\Manali\.nuget\packages\accord.statistics\3.8.0</PkgAccord_Statistics>
+    <PkgAccord_MachineLearning Condition=" '$(PkgAccord_MachineLearning)' == '' ">C:\Users\Manali\.nuget\packages\accord.machinelearning\3.8.0</PkgAccord_MachineLearning>
+  </PropertyGroup>
+</Project>

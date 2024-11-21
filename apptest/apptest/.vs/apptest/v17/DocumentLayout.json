@@ -1,0 +1,117 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Manali\\Downloads\\apptest\\apptest\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0CF439D0-71D5-4795-8FDD-22C0C303B285}|apptest\\apptest.fsproj|c:\\users\\manali\\downloads\\apptest\\apptest\\apptest\\apiversion.fs||{8A5AA6CF-46E3-4520-A70A-7393D15233E9}",
+      "RelativeMoniker": "D:0:0:{0CF439D0-71D5-4795-8FDD-22C0C303B285}|apptest\\apptest.fsproj|solutionrelative:apptest\\apiversion.fs||{8A5AA6CF-46E3-4520-A70A-7393D15233E9}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CF439D0-71D5-4795-8FDD-22C0C303B285}|apptest\\apptest.fsproj|c:\\users\\manali\\downloads\\apptest\\apptest\\apptest\\staticfiles\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0CF439D0-71D5-4795-8FDD-22C0C303B285}|apptest\\apptest.fsproj|solutionrelative:apptest\\staticfiles\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CF439D0-71D5-4795-8FDD-22C0C303B285}|apptest\\apptest.fsproj|c:\\users\\manali\\downloads\\apptest\\apptest\\apptest\\staticfiles\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{0CF439D0-71D5-4795-8FDD-22C0C303B285}|apptest\\apptest.fsproj|solutionrelative:apptest\\staticfiles\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CF439D0-71D5-4795-8FDD-22C0C303B285}|apptest\\apptest.fsproj|c:\\users\\manali\\downloads\\apptest\\apptest\\apptest\\staticfiles\\script.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{0CF439D0-71D5-4795-8FDD-22C0C303B285}|apptest\\apptest.fsproj|solutionrelative:apptest\\staticfiles\\script.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CF439D0-71D5-4795-8FDD-22C0C303B285}|apptest\\apptest.fsproj|c:\\users\\manali\\downloads\\apptest\\apptest\\apptest\\program.fs||{8A5AA6CF-46E3-4520-A70A-7393D15233E9}",
+      "RelativeMoniker": "D:0:0:{0CF439D0-71D5-4795-8FDD-22C0C303B285}|apptest\\apptest.fsproj|solutionrelative:apptest\\program.fs||{8A5AA6CF-46E3-4520-A70A-7393D15233E9}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CF439D0-71D5-4795-8FDD-22C0C303B285}|apptest\\apptest.fsproj|c:\\users\\manali\\downloads\\apptest\\apptest\\apptest\\apptest.fsproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{0CF439D0-71D5-4795-8FDD-22C0C303B285}|apptest\\apptest.fsproj|solutionrelative:apptest\\apptest.fsproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "style.css",
+              "DocumentMoniker": "C:\\Users\\Manali\\Downloads\\apptest\\apptest\\apptest\\StaticFiles\\style.css",
+              "RelativeDocumentMoniker": "apptest\\StaticFiles\\style.css",
+              "ToolTip": "C:\\Users\\Manali\\Downloads\\apptest\\apptest\\apptest\\StaticFiles\\style.css",
+              "RelativeToolTip": "apptest\\StaticFiles\\style.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-11-21T00:56:35.682Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "apptest.fsproj",
+              "DocumentMoniker": "C:\\Users\\Manali\\Downloads\\apptest\\apptest\\apptest\\apptest.fsproj",
+              "RelativeDocumentMoniker": "apptest\\apptest.fsproj",
+              "ToolTip": "C:\\Users\\Manali\\Downloads\\apptest\\apptest\\apptest\\apptest.fsproj",
+              "RelativeToolTip": "apptest\\apptest.fsproj",
+              "ViewState": "AgIAABYAAAAAAAAAAAAYwCkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001351|",
+              "WhenOpened": "2024-11-21T00:44:57.066Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "script.js",
+              "DocumentMoniker": "C:\\Users\\Manali\\Downloads\\apptest\\apptest\\apptest\\StaticFiles\\script.js",
+              "RelativeDocumentMoniker": "apptest\\StaticFiles\\script.js",
+              "ToolTip": "C:\\Users\\Manali\\Downloads\\apptest\\apptest\\apptest\\StaticFiles\\script.js",
+              "RelativeToolTip": "apptest\\StaticFiles\\script.js",
+              "ViewState": "AgIAABYAAAAAAAAAAAAAAB0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-11-21T00:30:53.172Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "index.html",
+              "DocumentMoniker": "C:\\Users\\Manali\\Downloads\\apptest\\apptest\\apptest\\StaticFiles\\index.html",
+              "RelativeDocumentMoniker": "apptest\\StaticFiles\\index.html",
+              "ToolTip": "C:\\Users\\Manali\\Downloads\\apptest\\apptest\\apptest\\StaticFiles\\index.html",
+              "RelativeToolTip": "apptest\\StaticFiles\\index.html",
+              "ViewState": "AgIAAGwAAAAAAAAAAAAAAGgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-11-21T00:34:06.045Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "APIVersion.fs",
+              "DocumentMoniker": "C:\\Users\\Manali\\Downloads\\apptest\\apptest\\apptest\\APIVersion.fs",
+              "RelativeDocumentMoniker": "apptest\\APIVersion.fs",
+              "ToolTip": "C:\\Users\\Manali\\Downloads\\apptest\\apptest\\apptest\\APIVersion.fs",
+              "RelativeToolTip": "apptest\\APIVersion.fs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEBAAByAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-11-20T16:36:46.987Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.fs",
+              "DocumentMoniker": "C:\\Users\\Manali\\Downloads\\apptest\\apptest\\apptest\\Program.fs",
+              "RelativeDocumentMoniker": "apptest\\Program.fs",
+              "ToolTip": "C:\\Users\\Manali\\Downloads\\apptest\\apptest\\apptest\\Program.fs",
+              "RelativeToolTip": "apptest\\Program.fs",
+              "ViewState": "AgIAAF0AAAAAAAAAAAAAAG4AAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-11-20T00:35:09.199Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
